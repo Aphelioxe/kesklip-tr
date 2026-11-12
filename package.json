@@ -1,0 +1,66 @@
+{
+  "name": "kesklip",
+  "productName": "KesKlip",
+  "version": "1.1.0",
+  "description": "KesKlip — hızlı ve basit video kırpma stüdyosu",
+  "main": "main.js",
+  "author": "KesKlip",
+  "license": "MIT",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check src/app.js && node --check main.js && node --check preload.js && node --check main/media-tools.js && node --check main/media-server.js && node --check main/exporter.js && node --check shared/timeline.js",
+    "icon": "node scripts/make-icon.js",
+    "dist": "electron-builder --win portable",
+    "pack": "electron-builder --dir"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.3.0",
+    "ffprobe-static": "^3.1.0"
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.kesklip.app",
+    "productName": "KesKlip",
+    "artifactName": "KesKlip-Portable.exe",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "shared/**/*",
+      "main/**/*",
+      "build/icon.png",
+      "build/icon.ico",
+      "package.json"
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/ffmpeg-static/**/*",
+      "node_modules/ffprobe-static/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "portable": {
+      "artifactName": "KesKlip-Portable.exe",
+      "requestExecutionLevel": "user"
+    }
+  }
+}
