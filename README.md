@@ -2,9 +2,14 @@
 
 KesKlip, Windows için hızlı ve sade bir video kırpma stüdyosudur. Uzun videoları yeniden kodlamadan, dosyayı kopyalamadan açar; kırpma, bölme, sıralama, hız, geçiş, yazı ve müzik ekleyip tek tıkla MP4 olarak dışa aktarır.
 
+## İndirme
+
+- **Taşınabilir sürüm:** [Releases](https://github.com/Aphelioxe/kesklip/releases) sayfasından `KesKlip-Portable.exe` dosyasını indir. Kurulum gerektirmez.
+- **Kaynak koddan derleme:** aşağıdaki [Geliştirme](#geliştirme) bölümüne bak.
+
 ## Hızlı başlangıç
 
-1. Masaüstündeki **KesKlip** kısayoluna çift tıkla (`D:\KesKlip\app\KesKlip.exe`). Kurulum gerekmez.
+1. **KesKlip**'i çalıştır (`KesKlip-Portable.exe`). Kurulum gerekmez.
 2. Sol üstteki **Videoları içe aktar** alanına tıkla veya videonu pencerenin üzerine sürükle.
 3. Zaman çizelgesinde klibi seç; sağdaki **Özellikler** panelinden kırp, böl, hızlandır; giriş/çıkış solması ve altı farklı geçiş ekle.
 4. **Yazı** sekmesinden başlık veya alt yazı ekle; yazıyı önizleme üzerinde sürükleyerek konumlandır.
@@ -15,9 +20,8 @@ Kaynak videolar hiçbir zaman kopyalanmaz veya değiştirilmez. KesKlip yalnızc
 
 ## Kurulum ve taşınabilirlik
 
-- Masaüstü kısayolu `D:\KesKlip\app\KesKlip.exe` dosyasını açar. `D:\KesKlip\app` klasörünü başka bir yere kopyalarsan uygulama oradan da çalışır (kısayol hedefini güncellemen yeterli).
-- Tek dosyalık taşınabilir sürüm: `D:\KesKlip\KesKlip-Portable.exe`. Kurulum gerektirmez. Her açılışta kendini geçici klasöre çıkardığı için ilk açılış 1–2 dakika sürebilir; günlük kullanımda masaüstü kısayolunu kullan.
-- Geliştirici derlemesi: `npm run dist` → `dist\KesKlip-Portable.exe`.
+- **Tek dosyalık taşınabilir sürüm:** `KesKlip-Portable.exe`. Kurulum gerektirmez. Her açılışta kendini geçici klasöre çıkardığı için ilk açılış 1–2 dakika sürebilir.
+- **Geliştirici derlemesi:** `npm run dist` → `dist\KesKlip-Portable.exe`.
 
 ## Özellikler
 
