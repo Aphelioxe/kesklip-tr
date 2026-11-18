@@ -4,7 +4,7 @@ KesKlip, Windows için hızlı ve sade bir video kırpma stüdyosudur. Uzun vide
 
 ## İndirme
 
-- **Taşınabilir sürüm:** [Releases](https://github.com/Aphelioxe/kesklip/releases) sayfasından `KesKlip-Portable.exe` dosyasını indir. Kurulum gerektirmez.
+- **Taşınabilir sürüm:** [Releases](https://github.com/Aphelioxe/kesklip-tr/releases) sayfasından `KesKlip-Portable.exe` dosyasını indir. Kurulum gerektirmez.
 - **Kaynak koddan derleme:** aşağıdaki [Geliştirme](#geliştirme) bölümüne bak.
 
 ## Hızlı başlangıç
